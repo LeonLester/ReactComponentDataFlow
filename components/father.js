@@ -1,5 +1,14 @@
 import 'antd/dist/antd.css';
-import {Button, Form, Input} from 'antd';
+import {
+  Button,
+  Form,
+  Input,
+  Row,
+  Col,
+  Card,
+  Divider,
+  Space
+} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 import Child from '../components/child'
 
@@ -9,9 +18,18 @@ export default function father(props) {
   // onFinish(values) {     changeSomonesState(values.name)   }
 
   return (
-    <h1>eimai o pateras
-      <Child data={props.data} changeStateFunction={props.stateFunction}></Child>
-    </h1>
-
+    <div>
+      <Row>
+        <Card title="eimai o pateras" style={{
+          width: "100%"
+        }}>
+          <Card title="eimai to paidi" style={{
+            width: "100%"
+          }}>
+            <Child data={props.data} changeStateFunction={props.stateFunction}></Child>
+          </Card>
+        </Card>
+      </Row>
+    </div>
   )
 };
