@@ -23,7 +23,7 @@ export default function childLeft() {
                         </FormItem>
                         <FormItem>
                             <Button htmlType="submit">
-                                Send to sibling.
+                                Send to cousin.
                             </Button>
                         </FormItem>
                     </Form>
