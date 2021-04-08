@@ -6,7 +6,7 @@ export default function fatherDownwards() {
   return (
     <div>
       <Row>
-        <Card title="eimai o pateras" style={{width: "100%"}}>
+        <Card type="inner" title="I am Father:" style={{width: "100%"}}>
           <ChildContext/>
         </Card>
       </Row>
