@@ -1,14 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import {useState} from 'react'
-import GrandFather from '../components/grandFather'
-import Father from '../components/father'
-
+import FatherSiblings from '../components/fatherSiblings'
 
 export default function siblings() {
   return (
     <div>
-      <GrandFather siblings ></GrandFather>
+      <FatherSiblings siblings ></FatherSiblings>
     </div>
   )
 }
