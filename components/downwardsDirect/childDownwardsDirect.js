@@ -4,10 +4,10 @@ import {Row,Card} from 'antd';
 export default function childDownwards(fatherProps) {
   return (
     <Row>
-      <Card title="eimai to paidi" style={{
+      <Card type="inner" title="I am Child:" style={{
         width: "100%"
       }}>
-        <span>{fatherProps.data}</span>
+        <span>With Grandfathers Value:{fatherProps.data}</span>
       </Card>
     </Row>
   )

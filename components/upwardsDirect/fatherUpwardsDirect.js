@@ -7,7 +7,7 @@ export default function fatherUpwards(grandfatherProps) {
     return (
         <div>
             <Row>
-                <Card title="I am Father:" style={{ width: "100%" }}>
+                <Card type="inner" title="I am Father:" style={{ width: "100%" }}>
 
                     <ChildUP data={grandfatherProps.data} changeStateFunction={grandfatherProps.stateFunction}></ChildUP>
 
