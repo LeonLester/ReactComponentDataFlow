@@ -3,8 +3,7 @@ import FatherDD from './fatherDownwardsDirect'
 import {Row, Col,Form,Card,Input,Button} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 
-export default function grandFather() {
-
+export default function grandFatherDownwards() {
   const [grandData,setGrandData] = useState("default")
 
   function onFinish(values) {

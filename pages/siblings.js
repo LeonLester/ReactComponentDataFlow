@@ -1,9 +1,9 @@
-import FatherSiblings from '../components/fatherSiblings'
+import FatherSiblings from '../components/siblings/fatherSiblings'
 
 export default function siblings() {
   return (
     <div>
-      <FatherSiblings siblings ></FatherSiblings>
+      <FatherSiblings  ></FatherSiblings>
     </div>
   )
 }

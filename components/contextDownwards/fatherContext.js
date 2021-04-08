@@ -1,14 +1,13 @@
 import 'antd/dist/antd.css';
 import {Row, Card} from 'antd';
-import ChildDD from './childDownwardsDirect'
+import ChildContext from './childContext'
 
-export default function father(props) {
-
+export default function fatherDownwards() {
   return (
     <div>
       <Row>
         <Card title="eimai o pateras" style={{width: "100%"}}>
-          <ChildDD data={props.data}></ChildDD>
+          <ChildContext/>
         </Card>
       </Row>
     </div>

@@ -1,9 +1,9 @@
-import GrandFatherDD from '../components/grandFatherDownwardsDirect'
+import GrandFatherDD from '../components/downwardsDirect/grandFatherDownwardsDirect'
 
 export default function downwards() {
   return (
     <div>
-      <GrandFatherDD downwards></GrandFatherDD>
+      <GrandFatherDD ></GrandFatherDD>
     </div>
   )
 }
