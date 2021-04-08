@@ -14,22 +14,21 @@ export default function grandFather() {
     return (
         <div>
             <Row>
-                <Col span={8}></Col>
-                    <Col span={8}>
-                    <Card title="GrandFather" extra={<h1>{data}</h1>} style={{ width: "100%"}}>
+                <Col span={24}>
+                    <Card type="inner" title="GrandFather" extra={<h1>{data}</h1>} style={{ width: "100%"}}>
                         <MyContext.Provider 
                             value={{
                                 state: data,
                                 setState: setData,
                             }}
-                        >
-                            <FatherLeft/>
-                            <FatherRight/>
+                        >   
+                                <Row justify="space-between" gutter={16}>
+                                <Col span={12}><FatherLeft/></Col>
+                                <Col span={12}><FatherRight/></Col>
+                                </Row>
                         </MyContext.Provider>
                     </Card>
                 </Col>
-                <Col span={8}></Col>
-                <Col span={8}></Col>
             </Row>
         </div>
     )

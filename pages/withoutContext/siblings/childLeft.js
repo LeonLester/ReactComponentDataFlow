@@ -10,7 +10,7 @@ export default function childLeft(fatherProps) {
   }
 
   return (
-    <Card type="inner" title="Left Child" extra={<h3>{fatherProps.data}</h3>} style={{width: "100%" }}>
+    <Card type="inner" title="Left Child" extra={<h3>My Value From Brother Is:{fatherProps.data}</h3>} style={{width: "100%" }}>
       <div>
         <Form onFinish={onFinish}>
           <FormItem name="name">

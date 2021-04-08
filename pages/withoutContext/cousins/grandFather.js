@@ -13,6 +13,7 @@ export default function grandFather() {
         <Row justify="center">
             <Col span={24}>
                 <Card 
+                    type="inner"
                     title="Grandfather" 
                     style={{ width: "100%"}}
                     extra={<h3>{fatherData}</h3>}

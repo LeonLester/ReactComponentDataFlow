@@ -15,7 +15,7 @@ export default function childLeft() {
     return (
         <div>
             <Row>
-                <Card title="Left Child" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
+                <Card type="inner" title="Left Child" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
                     <Form onFinish={onFinish}>
                         <FormItem name="name">
                             <Input maxLength="10"></Input>

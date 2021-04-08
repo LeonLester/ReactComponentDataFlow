@@ -18,7 +18,7 @@ export default function grandFather() {
             <Row>
                 <Col span={8}></Col>
                     <Col span={8}>
-                    <Card title="Grandfather" extra={<h1>{grandData}</h1>} style={{ width: "100%"}}>
+                    <Card type="inner" title="Grandfather" extra={<h1>{grandData}</h1>} style={{ width: "100%"}}>
                         <Form onFinish={onFinish}>
                             <FormItem name="name">
                                 <Input maxLength="10"></Input>

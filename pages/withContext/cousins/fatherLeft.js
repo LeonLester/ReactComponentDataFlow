@@ -10,7 +10,7 @@ export default function father() {
     return (
         <div>
             <Row>
-                <Card title="Left Father" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
+                <Card type="inner" title="Left Father" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
                     <ChildLeft/>
                 </Card>
             </Row>

@@ -16,7 +16,7 @@ export default function childRight() {
     return (
         <div>
             <Row>
-                <Card title="Right Child" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
+                <Card type="inner" title="Right Child" extra={<h1>{context.state}</h1>} style={{width: "100%"}}>
                     <Form onFinish={onFinish}>
                         <FormItem name="name">
                             <Input maxLength="10"></Input>

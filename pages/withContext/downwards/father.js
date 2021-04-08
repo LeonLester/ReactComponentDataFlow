@@ -9,7 +9,7 @@ export default function father() {
     return (
         <div>
             <Row>
-                <Card title="Father" extra={<h1>{context}</h1>} style={{width: "100%"}}>
+                <Card type="inner" title="Father" extra={<h1>{context}</h1>} style={{width: "100%"}}>
                     <Child/>
                 </Card>
             </Row>
