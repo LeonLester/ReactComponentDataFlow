@@ -7,7 +7,7 @@ export default function fatherDownwards(grandFatherprops) {
   return (
     <div>
       <Row>
-        <Card title="eimai o pateras" style={{width: "100%"}}>
+        <Card type="inner" title="I am Father:" style={{width: "100%"}}>
           <ChildDD data={grandFatherprops.data}></ChildDD>
         </Card>
       </Row>
