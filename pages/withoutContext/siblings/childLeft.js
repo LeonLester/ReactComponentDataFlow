@@ -2,7 +2,7 @@ import 'antd/dist/antd.css';
 import {Button, Form, Input,Card} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 
-export default function childSiblings(fatherProps) {
+export default function childLeft(fatherProps) {
   const changeSomonesState = fatherProps?.changeStateFunction;
 
   function onFinish(values) {
