@@ -8,6 +8,7 @@ const {Header, Footer, Content} = Layout;
 
 export default function grandFather(props) {
   const [grandData,setGrandData] = useState("default")
+  //console.log(props,"grandfather")
   return (
     <div>
       <Row>
@@ -16,9 +17,9 @@ export default function grandFather(props) {
         <Card title="Eimai O Pappous kai exw auth thn timi" extra={<h1>{grandData}</h1>} style={{ width: "100%"}}>
         <Father
         data={grandData}
-        stateFunction={props.upwards
-        ? setGrandData
-        : null}></Father>
+        downwards={props.downwards}
+        upwards={props.upwards}
+        stateFunction={props.upwards? setGrandData:props.siblings? setGrandData: null}></Father>
       </Card>
         </Col>
         <Col span={8}></Col>

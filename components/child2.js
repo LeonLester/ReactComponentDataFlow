@@ -3,10 +3,9 @@ import {Button, Form, Input, Row, Col} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 import {useState} from 'react';
 
-export default function child(Pageprops) {
-  //console.log(Pageprops, "child1")
+export default function child2(Pageprops) {
+  console.log(Pageprops, "child2")
   const changeSomonesState = Pageprops?.changeStateFunction
-
   function onFinish(values) {
     changeSomonesState(values.name)
   }

@@ -11,8 +11,7 @@ export default function Home() {
 
   return (
     <div>{userName}
-      <Father1 data={childData}/>
-      <Father2 data={childData}/>
+   
     </div>
   )
 }

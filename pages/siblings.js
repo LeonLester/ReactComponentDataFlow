@@ -5,10 +5,10 @@ import GrandFather from '../components/grandFather'
 import Father from '../components/father'
 
 
-export default function downwards() {
+export default function siblings() {
   return (
     <div>
-      <GrandFather downwards></GrandFather>
+      <GrandFather siblings ></GrandFather>
     </div>
   )
 }
