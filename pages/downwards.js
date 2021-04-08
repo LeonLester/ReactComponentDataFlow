@@ -1,14 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import {useState} from 'react'
-import GrandFather from '../components/grandFather'
-import Father from '../components/father'
+import GrandFatherDD from '../components/downwardsDirect/grandFatherDownwardsDirect'
 
-
-export default function Downwards() {
+export default function downwards() {
   return (
     <div>
-      <GrandFather></GrandFather>
+      <GrandFatherDD ></GrandFatherDD>
     </div>
   )
 }
