@@ -84,7 +84,11 @@ function grandFather() {
     const [grandFatherData, setGrandFatherData] = useState('Default');
 
     return (
-        <MyContext.Provider value={grandData}>
+        <MyContext.Provider  
+            value={{
+                state: grandData,
+                stateFunction: setGrandData,
+            }}>
             <father/>
         </MyContext.Provider>    
     )
@@ -108,7 +112,7 @@ function father() {
 
     return(
         <div>
-            This is the context value: {context}
+            This is the context value: {context.state}
             <child/>
         </div>
     )
