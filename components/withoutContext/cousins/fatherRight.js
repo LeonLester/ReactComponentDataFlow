@@ -7,7 +7,7 @@ export default function fatherRight(grandFatherProps) {
     <Card 
       type="inner" 
       title="Right Father" 
-      extra={<h3>{grandFatherProps.data}</h3>} 
+      
       style={{width: "100%" }}
     >
       <div>

@@ -4,9 +4,13 @@ import {useState} from 'react';
 import FatherLeft from './fatherLeft';
 import FatherRight from './fatherRight';
 
+/*
+
+*/
 export default function grandFather() {
 
-  const [fatherData,setGrandFatherData] = useState("Default");
+  const [leftChildData, setLeftChildData] = useState("Default")
+  const [rightChildData, setRightChildData] = useState("Default")
 
   return (
     <div>
@@ -16,15 +20,15 @@ export default function grandFather() {
                     type="inner"
                     title="Grandfather" 
                     style={{ width: "100%"}}
-                    extra={<h3>{fatherData}</h3>}
+                   
                 >
                     <div className="site-card-wrapper">
                         <Row gutter={16}>
                             <Col span={12}>
-                                <FatherLeft data={fatherData} changeStateFunction={setGrandFatherData}/>
+                                <FatherLeft data={leftChildData} changeStateFunction={setRightChildData}/>
                             </Col>
                             <Col span={12}>
-                                <FatherRight data={fatherData} changeStateFunction={setGrandFatherData}/>
+                                <FatherRight data={rightChildData} changeStateFunction={setLeftChildData}/>
                             </Col>
                         </Row>
                     </div>

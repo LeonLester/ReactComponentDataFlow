@@ -1,4 +1,4 @@
-import Upwards from '../../components/context/upwards/grandFather'
+import Upwards from '../../components/withoutContext/upwardsDirect/grandFatherUpwardsDirect'
 
 export default function upwards () {
     return <Upwards/>

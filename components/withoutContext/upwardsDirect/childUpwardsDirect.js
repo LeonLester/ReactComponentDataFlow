@@ -16,7 +16,7 @@ export default function childUpwards(fatherProps) {
   return (
     <Card type="inner" title="I am Child:" extra={<h1>{fatherProps.data}</h1>} style={{ width: "100%"}}>
       <div>
-        <h3>myValue:{fatherProps.data}</h3>
+        <h3>GrandFathers:{fatherProps.data}</h3>
         <Form onFinish={onFinish}>
             <FormItem name="name">
               <Input></Input>
