@@ -1,11 +1,7 @@
 import 'antd/dist/antd.css';
-import {Button, Form, Input,Card} from 'antd';
+import {Button, Form, Input,Card,Descriptions} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 
-
-/* 
-  The child receives its brothers setter function and when the button is clicked we call it with arguments the user input. 
-*/
 export default function childSiblings(fatherProps) {
   const changeSomonesState = fatherProps
     ?.changeStateFunction
@@ -29,6 +25,11 @@ export default function childSiblings(fatherProps) {
           </FormItem>
         </Form>
       </div>
+      <Descriptions title="Info About Childs">
+              <Descriptions.Item >
+              The child receives its brothers setter function and when the button is clicked we call it with arguments the user input. 
+              </Descriptions.Item>
+            </Descriptions>
     </Card>
   )
 };

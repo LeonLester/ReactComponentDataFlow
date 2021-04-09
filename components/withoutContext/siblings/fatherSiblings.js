@@ -1,14 +1,7 @@
 import 'antd/dist/antd.css';
-import {Row, Card, Divider, Col} from 'antd';
+import {Row, Card, Descriptions, Col} from 'antd';
 import {useState} from 'react'
 import ChildSiblings from './childSibling'
-
-/*
-  To achieve the flow we use a mix of upwards and downwards flow. Namely we create two state variables and their setter functions and
-  pass to each child his brother's setter function. So if child1 wants to change child2's state it just has to use the the setter 
-  function provided by their father.
-*/
-
 
 export default function fatherSiblings() {
 
@@ -38,6 +31,14 @@ export default function fatherSiblings() {
                 </Col>
               </Row>
             </div>
+            <Descriptions title="Info About Father">
+              <Descriptions.Item >
+                To achieve the flow we use a mix of upwards and downwards flow. Namely we create
+                two state variables and their setter functions and pass to each child his
+                brother's setter function. So if child1 wants to change child2's state it just
+                has to use the the setter function provided by their father.
+              </Descriptions.Item>
+            </Descriptions>
           </Card>
         </Col>
       </Row>

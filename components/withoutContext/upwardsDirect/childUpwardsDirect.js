@@ -1,10 +1,6 @@
 import 'antd/dist/antd.css';
-import {Button, Form, Input,Card} from 'antd';
+import {Button, Form, Input,Card,Descriptions} from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
-
-/*
-  The child receives the data and when the button is clicked we use the function and pass it the user input value as the arguments.
-*/
 
 export default function childUpwards(fatherProps) {
   const changeSomonesState = fatherProps?.changeStateFunction
@@ -28,6 +24,9 @@ export default function childUpwards(fatherProps) {
           </FormItem>
         </Form>
       </div>
+      <Descriptions title="Info About Child">
+        <Descriptions.Item >The child receives the data and when the button is clicked we use the function and pass it the user input value as the arguments.</Descriptions.Item>
+        </Descriptions>
      </Card>
   )
 };

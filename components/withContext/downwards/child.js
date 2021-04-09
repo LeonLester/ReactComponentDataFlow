@@ -7,8 +7,8 @@ export default function child() {
     return (
         <div>
             <Row>
-                <Card type="inner" title="Child" extra={<h1>{context}</h1>} style={{width: "100%"}}>
-                    Downwards use of Context.
+                <Card type="inner" title="Child" style={{width: "100%"}}>
+                        With Grandfathers Value: {context}
                 </Card>
             </Row>
         </div>
