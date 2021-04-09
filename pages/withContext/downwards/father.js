@@ -5,11 +5,10 @@ import {Row, Card} from 'antd';
 import {useContext} from 'react';
 
 export default function father() {
-    const context = useContext(MyContext);
     return (
         <div>
             <Row>
-                <Card type="inner" title="Father" extra={<h1>{context}</h1>} style={{width: "100%"}}>
+                <Card type="inner" title="Father" style={{width: "100%"}}>
                     <Child/>
                 </Card>
             </Row>
