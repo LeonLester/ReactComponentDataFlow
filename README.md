@@ -45,7 +45,7 @@ function child(fatherProps) {
     const changeGrandFatherState = fatherProps?.changeStateFunction;
 
     //Here we call the grandFathers setState function.
-    changeSomonesState('GrandFather new value');
+    changeGrandFatherState('GrandFather new value');
 
     return(
        <div>
