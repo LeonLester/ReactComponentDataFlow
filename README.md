@@ -1,6 +1,13 @@
+# Contents #
+1. [ Pass variables-function between components without Context ](#noContext)
+2. [ Pass variables-function between components with Context ](#context)
+3. [ Setup ](#setup)
+
 # How to pass variables-functions between components #
 
-## Passing variables-functions using props ##
+
+
+## Passing variables-functions using props<a name="noContext"></a>
 
 This is an indicative code sample, just to showcase the way the variables are passed through the props. In order to see working code please refer to the components/withoutContext folder.
 
@@ -52,7 +59,7 @@ We pass the **grandFatherData** state variable and the **setGrandFatherData** st
 
 
 
-## Passing variables-functions using Context ##
+## Passing variables-functions using Context<a name="context"></a>
 
 This is an indicative code sample, just to showcase the way the variables are passed through **Context**. In order to see working code please refer to the components/withContext folder.
 
@@ -141,5 +148,17 @@ function child() {
 We pass the **grandFatherData** state variable and the **setGrandFatherData** state function from the **grandFather** component to **Context.Provider**. Now every sub component of the **grandFather** commponect has direct access to the **Context** value.
 
 In our case which we have only three components, its not as important to use Context as it would be if we had 10 or 20 components. 
+
+
+
+# Setup Guide<a name="setup"></a>
+
+In a directory of your choice write the following commands.
+
+```
+~ git clone https://github.com/raven99p/ComponentFlows
+~ npm install 
+```
+
 
 
