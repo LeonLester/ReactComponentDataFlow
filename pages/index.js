@@ -1,14 +1,5 @@
-import {useState} from 'react'
-
-export default function Home() {
-  const [userName,setUserName] = useState()
-  const [childData,setChildData] = useState([])
-
-  function helloWorld() {}
-
+export default function home() {
   return (
-    <div>{userName}
-   
-    </div>
+    <div>Options for pages</div>
   )
 }
