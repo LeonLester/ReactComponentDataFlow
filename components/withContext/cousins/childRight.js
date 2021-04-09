@@ -1,4 +1,4 @@
-import {MyContext} from './grandFather';
+import {rightChildContext} from './grandFather';
 import 'antd/dist/antd.css';
 import {useContext} from 'react';
 import {Row, Form, Card, Input, Button} from 'antd';
@@ -7,7 +7,7 @@ import FormItem from 'antd/lib/form/FormItem';
 
 
 export default function childRight() {
-    const context = useContext(MyContext);
+    const context = useContext(rightChildContext);
     
     function onFinish(values) {
         context.setState(values.name);
