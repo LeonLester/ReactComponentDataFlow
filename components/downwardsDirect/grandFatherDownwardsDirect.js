@@ -7,8 +7,10 @@ import FormItem from 'antd/lib/form/FormItem';
 
    This is the grandfather component. In the 'downwards direct' flow, data is passed through all of the components in the hierarchy.
    That means that the data passes through every component 'below' the one that wishes to pass data. To use this method you simply 
-   need to pass the data in the component as shown below. Inside the <FatherDD> component we set a value called data to which we assign
-   the values we need to send downwards 
+   need to pass the data in the component as shown below. In our example we used some hypothetical 'grandfather', 'father' and 'child' 
+   components to show that the data needs to pass through every component. Inside the <FatherDD> component we set a value called 
+   data to which we assign the values we need to send downwards. For the code to make more sense you should checkout the 
+   fatherDownwardsDirect.js component. 
 
 */
 
