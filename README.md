@@ -9,7 +9,7 @@
 
 ## Passing variables-functions using props<a name="noContext"></a>
 
-This is an indicative code sample, just to showcase the way the variables are passed through the props. In order to see working code please refer to the components/withoutContext folder.
+This is an indicative code sample, to showcase the way the variables are passed through the props. In order to see working code please refer to the components/withoutContext folder.
 
 ```
 function grandFather() {
@@ -25,7 +25,7 @@ function grandFather() {
 }
 ```
 
-The 'father' component is the child of the grandFather component.
+The **father** component is the child of the **grandFather** component.
 
 ```
 function father(grandFatherProps) {
@@ -38,7 +38,7 @@ function father(grandFatherProps) {
 }
 ```
 
-The 'child' component is the child of the father component.
+The *child** component is the child of the **father** component.
 
 ```
 function child(fatherProps) {
@@ -61,7 +61,7 @@ We pass the **grandFatherData** state variable and the **setGrandFatherData** st
 
 ## Passing variables-functions using Context<a name="context"></a>
 
-This is an indicative code sample, just to showcase the way the variables are passed through **Context**. In order to see working code please refer to the components/withContext folder.
+This is an indicative code sample, to showcase the way the variables are passed through **Context**. In order to see working code please refer to the components/withContext folder.
 
 
 
@@ -85,10 +85,7 @@ function grandFather() {
 
     return (
         <MyContext.Provider value={grandData}>
-            <father 
-                state = {grandFatherData} 
-                stateFunction = {setGrandFatherData} 
-            />
+            <father/>
         </MyContext.Provider>    
     )
 }
@@ -98,12 +95,12 @@ function grandFather() {
 
 The **father** component is the child of the **grandFather** component. 
 
-In order to gain access to the **Context** first we need to import  the **useContext** Hook like so.
+In order to gain access to the **Context**, firstly we need to import  the **useContext** Hook like so.
 
 ```
 import {useContext} from 'react';
 ```
-Then we use this command to get the value of the **Context**.
+Then we get the value of the **Context**.
 ```
 function father() {
 
@@ -112,11 +109,7 @@ function father() {
     return(
         <div>
             This is the context value: {context}
-
-            <child 
-                data = {grandFatherData.data} 
-                changeStateFunction = {grandfatherProps.stateFunction}        
-            />
+            <child/>
         </div>
     )
 }
@@ -145,17 +138,18 @@ function child() {
 
 
 
-We pass the **grandFatherData** state variable and the **setGrandFatherData** state function from the **grandFather** component to **Context.Provider**. Now every sub component of the **grandFather** commponect has direct access to the **Context** value.
+We pass the **grandFatherData** state variable and the **setGrandFatherData** state function from the **grandFather** component to **Context.Provider**. Now every sub component of the **grandFather** componect has direct access to the **Context** value.
 
-In our case which we have only three components, its not as important to use Context as it would be if we had 10 or 20 components. 
+In our case which we have only three components, its not as important to use Context as it would be, if we had 10 or more components. 
 
 
 
 # Setup Guide<a name="setup"></a>
 
-In a directory of your choice write the following commands.
+In a directory of your choice type the following commands to download and setup this example of data flow between components.
 
 ```
+~ git init
 ~ git clone https://github.com/raven99p/ComponentFlows
 ~ npm install 
 ```
