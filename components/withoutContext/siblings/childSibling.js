@@ -11,7 +11,7 @@ export default function childSiblings(fatherProps) {
   }
 
   return (
-    <Card type="inner" title="I am Child" extra={<h3>My Value From Brother is:{fatherProps.data}</h3>} style={{width: "100%" }}>
+    <Card type="inner" title="Child" extra={<h3>My Value From Brother is:{fatherProps.data}</h3>} style={{width: "100%" }}>
       <div>
         <h1>Give Value</h1>
         <Form onFinish={onFinish}>

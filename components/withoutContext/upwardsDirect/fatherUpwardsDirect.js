@@ -1,5 +1,5 @@
 import 'antd/dist/antd.css';
-import {Row,Card,Descriptions} from 'antd';
+import {Row,Card} from 'antd';
 import ChildUP from './childUpwardsDirect'
 
 export default function fatherUpwards(grandfatherProps) {
@@ -7,13 +7,10 @@ export default function fatherUpwards(grandfatherProps) {
     return (
         <div>
             <Row>
-                <Card type="inner" title="I am Father:" style={{ width: "100%" }}>
+                <Card type="inner" title="Father" style={{ width: "100%" }}>
 
                     <ChildUP data={grandfatherProps.data} changeStateFunction={grandfatherProps.stateFunction}></ChildUP>
-                    <Descriptions title="Info About Father">
-                        <Descriptions.Item >Same as before in the downwards flow but this time we pass the setter function.
-                        </Descriptions.Item>
-                    </Descriptions>
+                
                 </Card>
             </Row>
         </div>

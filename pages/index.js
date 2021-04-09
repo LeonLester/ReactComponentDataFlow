@@ -93,12 +93,12 @@ export default function home() {
               </Col>
               <Col span={12}>
                 <Card type="inner" title="Pass Props From Child To GrandFather">
-                  <Button shape="round" type="primary" onClick={showModal2}>
+                  <Button shape="round" type="primary" onClick={showModal1}>
                     Give It A Try!
                   </Button>
                   <Modal
                     title="Pass Props From Child To GrandFather"
-                    visible={isModalVisible2}
+                    visible={isModalVisible1}
                     onOk={handleCancel}
                     onCancel={handleCancel}
                     width={1500}>
@@ -114,12 +114,12 @@ export default function home() {
                 marginTop: 16
               }}>
                 <Card type="inner" title="Pass Props From One Brother To The Other">
-                  <Button shape="round" type="primary" onClick={showModal1}>
+                  <Button shape="round" type="primary" onClick={showModal2}>
                     Give It A Try!
                   </Button>
                   <Modal
                     title="Pass Props From One Brother To The Other"
-                    visible={isModalVisible1}
+                    visible={isModalVisible2}
                     onOk={handleCancel}
                     onCancel={handleCancel}
                     width={1500}>

@@ -14,7 +14,7 @@ export default function fatherSiblings() {
     <div>
       <Row justify="center">
         <Col span={24}>
-          <Card title="I am Father" style={{
+          <Card type="inner" title="Father" style={{
             width: "100%"
           }}>
             <div className="site-card-wrapper">
