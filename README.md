@@ -86,8 +86,8 @@ function grandFather() {
     return (
         <MyContext.Provider  
             value={{
-                state: grandData,
-                stateFunction: setGrandData,
+                state: grandFatherData,
+                stateFunction: setGrandFatherData,
             }}>
             <father/>
         </MyContext.Provider>    
